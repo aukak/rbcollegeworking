@@ -1,20 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Title</title>
 <link rel="manifest" href="/manifest.json">
-
-
-
-
-<section>
-
-<iframe margin-left="2px" allowfullscreen="true" width="1080px !important" height="609px !important" src="new.html" frameborder="0"></iframe></iframe>
-
-</section>
 <style>
-  iframe{
-    margin-left: -8;
-    border: 0;
-    bottom: 1px;
-    position: ;
-    
+  section {
+    width: 100vw; /* Set section width to full viewport width */
+    height: 100vh; /* Set section height to full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  iframe {
+    width: 100%; /* Set iframe width to 100% of its container (section) */
+    height: 100%; /* Set iframe height to 100% of its container (section) */
+    border: 0; /* Remove iframe border */
   }
 </style>
-<a href="https://www.google.com" style="position: fixed; top: 10px; right: 10px;">Play more</a>
+</head>
+<body>
+
+<section>
+  <iframe allowfullscreen="true" src="new.html" frameborder="0"></iframe>
+</section>
+
+</body>
+</html>
