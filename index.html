@@ -27,3 +27,12 @@
 
 </body>
 </html>
+<div id="popup" style="display: none; position: fixed; top: 10px; right: 10px; background-color: yellow; padding: 10px; z-index: 9999;">Play more</div>
+<script>
+  setInterval(function() {
+    document.getElementById('popup').style.display = 'block';
+    setTimeout(function() {
+      document.getElementById('popup').style.display = 'none';
+    }, 10000);
+  }, 30000);
+</script>
