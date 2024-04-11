@@ -29,6 +29,7 @@
 </html>
 
  <!-- CD START (required) -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -40,18 +41,14 @@
     padding: 0;
     overflow: hidden; 
   }
-  #container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
   #image {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -300px; 
     transition: right 1s ease;
-    z-index: 999;
+    z-index: 999; 
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
   }
 </style>
 </head>
@@ -77,12 +74,9 @@
     image.style.right = "-300px"; 
   }
 
-
   slideLeft();
 
-
   setTimeout(slideRight, 5000);
-
 
   setInterval(function() {
     slideLeft();
@@ -93,30 +87,3 @@
 
 </body>
 </html>
-
-
-
-
-
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden; 
-  }
-  #container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-  #image {
-    position: absolute;
-    top: 0;
-    right: -150px; 
-    transition: right 1s ease;
-    z-index: 999; 
-    width: 150px; 
-    height: auto; 
-  }
-</style>
